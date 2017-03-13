@@ -1,0 +1,266 @@
+body {
+  text-rendering:  optimizeLegibility
+  font-family: 'Avenir Next';
+}
+
+h1 {
+  font-weight: 500;
+  margin: 60px 0;
+}
+
+h2 {
+  font-weight: 500;
+  margin: 30px 0;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+p {
+  font-weight: lighter;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+}
+
+.header-container {
+  line-height: 70px;
+  padding-top: 20px;
+  background: #66CCFF;
+}
+
+#alt-header {
+  background: #66CCFF;
+  min-height: 60px;
+}
+
+#alt-header .inner {
+  max-width: 960px;
+  margin: auto;
+}
+
+#alt-header .logo {
+  height: 20px;
+  margin-top: 18px;
+}
+
+.body {
+  max-width: 960px;
+  margin: auto;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 40px;
+}
+
+.nav-container {
+  width: 92.3%;
+  max-width: 960px;
+  margin: auto;
+}
+
+.nav-container .nav-item {
+  margin-right: 49px;
+  display: inline;
+  padding: 2px;
+}
+
+.nav-container .nav-link {
+  font-family: 'Avenir Next Demi';
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: -25px;
+  letter-spacing: 0.5px;
+}
+
+.nav-container .nav-icon-link {
+  position: absolute;
+  top: 25px;
+}
+
+.nav-home-link {
+  visibility: hidden;
+}
+
+#demo {
+  background: #66CCFF;
+  display: table;
+  width: 100%;
+  height: calc(100% - 46px);
+  padding-top: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+#demo .outer {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#demo .headline {
+  color: white;
+  margin: 0;
+  padding: 0;
+  padding-top: 35%;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 50px;
+  opacity: 0.8;
+}
+
+#demo .email-input {
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  background: rgba(255, 255, 255, .2);
+  padding: 15px;
+  margin-top: 15px;
+}
+
+#demo input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, .7);
+}
+
+#demo input::-moz-placeholder {
+  color: rgba(255, 255, 255, .7);
+}
+#demo input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, .7);
+}
+#demo input:-moz-placeholder {
+  color: rgba(255, 255, 255, .7);
+}
+
+.clearfix {
+
+}
+
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+#demo .store.apple .action {
+  background-image: url("../img/appstore.svg");
+}
+
+#demo .store.google .action {
+  background-image: url("https://www.snapchat.com/static/style-guide/download/google.svg");
+  display: none;
+}
+
+#demo .store {
+  display: inline-block;
+}
+
+#demo .action {
+  width: 9.25em;
+  height: 2.75em;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+  text-indent: -1000em;
+  overflow: hidden;
+  opacity: 0.8;
+}
+
+#demo .stores {
+  margin-top: 16px;
+}
+
+#demo ul, #demo li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-container {
+  box-sizing: content-box;
+  position: relative;
+  padding: 30px 0 30px;
+  min-height: 15px;
+  background: white;
+  width: 92.3%;
+  max-width: 960px;
+  margin: auto;
+}
+
+.footer-container a {
+  text-decoration: none;
+  color: #263238;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 30px;
+}
+
+.company {
+  float: right;
+  font-size: 14px;
+  color: #9BA5AA;
+  font-weight: 100;
+}
+
+@media only screen and (max-width: 737px) {
+  .body {
+    padding: 0 30px;
+  }
+  #alt-header {
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (min-width: 737px) {
+  #demo .inner {
+    width: 720px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  #demo .phone {
+    width: 281px;
+    height: 562px;
+    float: left;
+    position: relative;
+  }
+
+  #demo .video {
+    display: block;
+    position: absolute;
+    top: 66px;
+    left: 25px;
+    background: black;
+    width: 231px;
+    height: 407px;
+    z-index: 100;
+  }
+
+  #demo .video video {
+    width: 231px;
+    height: 407px;
+  }
+
+  #demo .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/phone.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  #demo .actions {
+    position: absolute;
+    top: 50%;
+    left: 355px;
+    right: 0;
+    height: 110px;
+    text-align: left;
+  }
+}
